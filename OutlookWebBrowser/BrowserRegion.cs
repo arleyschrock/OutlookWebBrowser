@@ -43,6 +43,7 @@ namespace OutlookWebBrowser
         // Use this.OutlookFormRegion to get a reference to the form region.
         private void BrowserRegion_FormRegionClosed(object sender, System.EventArgs e)
         {
+
         }
 
         private void BrowserRegion_Load(object sender, EventArgs e)
