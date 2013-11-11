@@ -75,13 +75,13 @@
             // 
             // webSessionProvider1
             // 
+            this.webSessionProvider1.DataPath = "C:\\Users\\aschrock\\Documents\\Outlook Files\\Outlook Web Browser";
             webPreferences1.CanScriptsAccessClipboard = true;
             webPreferences1.EnableGPUAcceleration = true;
             webPreferences1.FileAccessFromFileURL = true;
             webPreferences1.SmoothScrolling = true;
             webPreferences1.UniversalAccessFromFileURL = true;
             webPreferences1.WebGL = true;
-            this.webSessionProvider1.DataPath = BrowserRegion.DataPath;
             this.webSessionProvider1.Preferences = webPreferences1;
             this.webSessionProvider1.Views.Add(this.webControl1);
             // 
@@ -112,7 +112,7 @@
         private static void InitializeManifest(Microsoft.Office.Tools.Outlook.FormRegionManifest manifest, Microsoft.Office.Tools.Outlook.Factory factory)
         {
             manifest.Description = "Web Browser inside of Outlook 2013";
-            manifest.FormRegionName = "WebBrowser";
+            manifest.FormRegionName = "Web Browser";
 
         }
 

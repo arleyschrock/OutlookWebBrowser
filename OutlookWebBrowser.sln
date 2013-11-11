@@ -7,9 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutlookWebBrowser", "Outloo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7F9F5F6B-8C04-4D0E-A41D-2A7731BD1898}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\Pictures\browser view.PNG = ..\..\..\..\Pictures\browser view.PNG
 		README.md = README.md
-		..\..\..\..\Pictures\standard view.PNG = ..\..\..\..\Pictures\standard view.PNG
 	EndProjectSection
 EndProject
 Global
