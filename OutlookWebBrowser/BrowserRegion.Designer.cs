@@ -35,7 +35,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Awesomium.Core.WebPreferences webPreferences2 = new Awesomium.Core.WebPreferences(true);
+            Awesomium.Core.WebPreferences webPreferences1 = new Awesomium.Core.WebPreferences(true);
             this.panel1 = new System.Windows.Forms.Panel();
             this.addressBox1 = new Awesomium.Windows.Forms.AddressBox();
             this.webControl1 = new Awesomium.Windows.Forms.WebControl(this.components);
@@ -75,13 +75,13 @@
             // 
             // webSessionProvider1
             // 
-            webPreferences2.CanScriptsAccessClipboard = true;
-            webPreferences2.EnableGPUAcceleration = true;
-            webPreferences2.FileAccessFromFileURL = true;
-            webPreferences2.SmoothScrolling = true;
-            webPreferences2.UniversalAccessFromFileURL = true;
-            webPreferences2.WebGL = true;
-            this.webSessionProvider1.Preferences = webPreferences2;
+            webPreferences1.CanScriptsAccessClipboard = true;
+            webPreferences1.EnableGPUAcceleration = true;
+            webPreferences1.FileAccessFromFileURL = true;
+            webPreferences1.SmoothScrolling = true;
+            webPreferences1.UniversalAccessFromFileURL = true;
+            webPreferences1.WebGL = true;
+            this.webSessionProvider1.Preferences = webPreferences1;
             this.webSessionProvider1.Views.Add(this.webControl1);
             // 
             // BrowserRegion
@@ -111,8 +111,8 @@
         /// </summary>
         private static void InitializeManifest(Microsoft.Office.Tools.Outlook.FormRegionManifest manifest, Microsoft.Office.Tools.Outlook.Factory factory)
         {
+            manifest.Description = "Web Browser inside of Outlook 2013";
             manifest.FormRegionName = "WebBrowser";
-            manifest.ShowReadingPane = false;
 
         }
 
