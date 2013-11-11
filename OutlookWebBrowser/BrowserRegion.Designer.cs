@@ -81,6 +81,7 @@
             webPreferences1.SmoothScrolling = true;
             webPreferences1.UniversalAccessFromFileURL = true;
             webPreferences1.WebGL = true;
+            this.webSessionProvider1.DataPath = BrowserRegion.DataPath;
             this.webSessionProvider1.Preferences = webPreferences1;
             this.webSessionProvider1.Views.Add(this.webControl1);
             // 
@@ -94,7 +95,6 @@
             this.Size = new System.Drawing.Size(534, 202);
             this.FormRegionShowing += new System.EventHandler(this.BrowserRegion_FormRegionShowing);
             this.FormRegionClosed += new System.EventHandler(this.BrowserRegion_FormRegionClosed);
-            this.Load += new System.EventHandler(this.BrowserRegion_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

@@ -46,11 +46,27 @@ namespace OutlookWebBrowser
 
         }
 
-        private void BrowserRegion_Load(object sender, EventArgs e)
+        public static string DataPath
         {
-            var docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            var dataPath = Path.Combine(docPath, "Outlook Web Browser");
-            webSessionProvider1.DataPath = dataPath;
+            get
+            {
+                if (string.IsNullOrEmpty(_dataPath))
+                {
+                    var docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                    _dataPath = Path.Combine(docPath, "Outlook Files", "Outlook Web Browser");
+
+                    try
+                    {
+                        if (!Directory.Exists(_dataPath))
+                        {
+                            Directory.CreateDirectory(_dataPath);
+                        }
+                    }
+                    catch { }
+                }
+                return _dataPath;
+            }
         }
+        private static string _dataPath = null;
     }
 }
